@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic</title><link>https://bailocisse.github.io/</link><atom:link href="https://bailocisse.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Academic</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://bailocisse.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Academic</title><link>https://bailocisse.github.io/</link></image><item><title>Example Talk</title><link>https://bailocisse.github.io/talk/example-talk/</link><pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate><guid>https://bailocisse.github.io/talk/example-talk/</guid><description>&lt;div class="alert alert-note">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My personal page | Academic</title><link>https://bailocisse.github.io/</link><atom:link href="https://bailocisse.github.io/index.xml" rel="self" type="application/rss+xml"/><description>My personal page</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://bailocisse.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>My personal page</title><link>https://bailocisse.github.io/</link></image><item><title>Example Talk</title><link>https://bailocisse.github.io/talk/example-talk/</link><pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate><guid>https://bailocisse.github.io/talk/example-talk/</guid><description>&lt;div class="alert alert-note">
 &lt;div>
 Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in slides feature.
 &lt;/div>
@@ -9,7 +9,398 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Welcome to Wowchemy, the website builder for Hugo</title><link>https://bailocisse.github.io/post/getting-started/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/post/getting-started/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">libr&lt;/span>
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Data engineering</title><link>https://bailocisse.github.io/project/example/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/project/example/</guid><description>&lt;p>In this project, we will be working with &lt;code>Kafka&lt;/code>, one of the most successful applications for handling streaming data at scale. We will use a Docker image created by Confluent that installs all of the necessary Kafka components including, among others, the &lt;code>broker&lt;/code> and &lt;code>ZooKeeper&lt;/code>. Kafka allows us to store messages in &lt;code>topics&lt;/code>, which are distributed across multiple brokers by splitting topics into data partitions that save us from unfortunate broker failures.&lt;/p>
+&lt;p>To get started with this project, we will begin with a simple Kafka implementation. With this implementation, we will create a &lt;code>Python application&lt;/code> that publishes vehicle location longitude-latitude data to a Kafka topic. Next, we will use Node.js to start a &lt;code>web server&lt;/code> that acts as a consumer for the messages received from the Kafka application.&lt;/p>
+&lt;ol>
+&lt;li>Download and extract the &lt;code>Project 24_3_Kafka&lt;/code> folder&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot1_huca7517005d77b7b502dfeb076a0fbddf_81599_89c7926e82e29e2ff9216902cf3826bb.webp 400w,
+/project/example/screenshot1_huca7517005d77b7b502dfeb076a0fbddf_81599_3ec49f9cc4e5c1bf2d41e88b8d8f5933.webp 760w,
+/project/example/screenshot1_huca7517005d77b7b502dfeb076a0fbddf_81599_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot1_huca7517005d77b7b502dfeb076a0fbddf_81599_89c7926e82e29e2ff9216902cf3826bb.webp"
+width="760"
+height="92"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="2">
+&lt;li>Open your Docker Desktop. Select the gear icon on the top right of the Docker Desktop window, then select Resources. Ensure that your CPU and memory are both set to a minimum of 6 GB.
+For windows users :
+Inside your user home folder: &lt;code>C:\Users\”YOUR_WINDOWS_USERNAME”&lt;/code>, create a new file titled .wslconfig. Copy and and paste the following lines of code inside of the &lt;code>.wslconfig&lt;/code> file:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[wsl2]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">memory=8GB # Limits VM memory in WSL 2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">processors=4 # Makes the WSL 2 VM use 4 virtual processors
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">localhostForwarding=true # Boolean specifying if ports bound to wildcard or localhost in the WSL 2 VM should be connectable from the host via localhost:port.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot2_huca7517005d77b7b502dfeb076a0fbddf_86735_dfc8b31f4275f8405ae7005b8f5a27c6.webp 400w,
+/project/example/screenshot2_huca7517005d77b7b502dfeb076a0fbddf_86735_30371dd5c6e7b7eaed4a22effb244a73.webp 760w,
+/project/example/screenshot2_huca7517005d77b7b502dfeb076a0fbddf_86735_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot2_huca7517005d77b7b502dfeb076a0fbddf_86735_dfc8b31f4275f8405ae7005b8f5a27c6.webp"
+width="760"
+height="118"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="3">
+&lt;li>Next, you will create the Kafka Docker container components. Navigate to the kafka-docker folder inside the Project24_3_Kafka folder. In a Terminal window, run the following command to initialize your Kafka container:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker-compose up
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Open the Docker Desktop and confirm that all of the required Kafka container components are now up and running. The nine required container components are: &lt;code>zookeeper&lt;/code>, &lt;code>broker&lt;/code>, &lt;code>schema-registry&lt;/code>, &lt;code>rest-proxy&lt;/code>, &lt;code>connect&lt;/code>, &lt;code>ksqlbd-server&lt;/code>, &lt;code>ksql-datagen&lt;/code>, &lt;code>ksqlbd-cli&lt;/code>, and &lt;code>control-center&lt;/code>.&lt;/p>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot3_huca7517005d77b7b502dfeb076a0fbddf_288626_c5a35a1daaaf7b53224d92c12ca4d69e.webp 400w,
+/project/example/screenshot3_huca7517005d77b7b502dfeb076a0fbddf_288626_62af7e5af24cc15da5c1d450e3b946fd.webp 760w,
+/project/example/screenshot3_huca7517005d77b7b502dfeb076a0fbddf_288626_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot3_huca7517005d77b7b502dfeb076a0fbddf_288626_c5a35a1daaaf7b53224d92c12ca4d69e.webp"
+width="760"
+height="407"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="4">
+&lt;li>Open your browser and navigate to the following URL: http://localhost:9021. This is the Confluent Control Center, and it will allow you to check the status of the Kafka cluster that you spun up.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot4_huca7517005d77b7b502dfeb076a0fbddf_80210_15e5be8b663e1c5b5a4544c797ed712c.webp 400w,
+/project/example/screenshot4_huca7517005d77b7b502dfeb076a0fbddf_80210_8b41c57ed52b00a91bdbff80e802040d.webp 760w,
+/project/example/screenshot4_huca7517005d77b7b502dfeb076a0fbddf_80210_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot4_huca7517005d77b7b502dfeb076a0fbddf_80210_15e5be8b663e1c5b5a4544c797ed712c.webp"
+width="760"
+height="245"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="5">
+&lt;li>Navigate to the &lt;code>Topics&lt;/code> list on the Confluent Control Center by selecting &lt;code>“Topics”&lt;/code> in the controlcenter.cluster in the Confluent Control Center.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot5_huca7517005d77b7b502dfeb076a0fbddf_129133_059b3ecd5ff485cf5f199a32c4d48f5a.webp 400w,
+/project/example/screenshot5_huca7517005d77b7b502dfeb076a0fbddf_129133_706b4b5b353d3ea59818de5ef49f9759.webp 760w,
+/project/example/screenshot5_huca7517005d77b7b502dfeb076a0fbddf_129133_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot5_huca7517005d77b7b502dfeb076a0fbddf_129133_059b3ecd5ff485cf5f199a32c4d48f5a.webp"
+width="760"
+height="258"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="6">
+&lt;li>Next, you will be writing Python code to simulate an IoT device that publishes the longitude and latitude coordinates of vehicles’ locations to Kafka. From http://localhost:9021, select Topics and then select “Add a topic”. Title the new topic &lt;code>vehicle-coordinates&lt;/code>, set the number of partitions to 1, and select “Create with default settings”.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot6_huca7517005d77b7b502dfeb076a0fbddf_130966_87ac617acecbbe85e982037b830f89e5.webp 400w,
+/project/example/screenshot6_huca7517005d77b7b502dfeb076a0fbddf_130966_d943a23e9ccc3797f8751cc1c6778ba1.webp 760w,
+/project/example/screenshot6_huca7517005d77b7b502dfeb076a0fbddf_130966_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot6_huca7517005d77b7b502dfeb076a0fbddf_130966_87ac617acecbbe85e982037b830f89e5.webp"
+width="760"
+height="271"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="7">
+&lt;li>From the command prompt, run the following command to install the Kafka Python client:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">pip install kafka-python
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot7_huca7517005d77b7b502dfeb076a0fbddf_557253_697d0054823efe6c06e50332a28568d4.webp 400w,
+/project/example/screenshot7_huca7517005d77b7b502dfeb076a0fbddf_557253_18c497498a98bac6cc42b8cc9acbbc5c.webp 760w,
+/project/example/screenshot7_huca7517005d77b7b502dfeb076a0fbddf_557253_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot7_huca7517005d77b7b502dfeb076a0fbddf_557253_697d0054823efe6c06e50332a28568d4.webp"
+width="760"
+height="514"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="8">
+&lt;li>In VS Code, open the &lt;code>PublishVehicleCoordinates.py&lt;/code> file inside the &lt;code>pythonProducer&lt;/code> folder. Paste the code below into the file to create the template to define the producer:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kafka&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">time&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">random&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">json&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">time&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">sleep&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#define producer and consumer variable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sensor_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;longitude&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;latitude&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">topic_name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="err">????&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">client&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaClient&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">producer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaProducer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">value_serializer&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">lambda&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">json&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dumps&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">encode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">consumer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaConsumer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">acked&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">err&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">msg&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">err&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Failed to deliver message: &lt;/span>&lt;span class="si">{0}&lt;/span>&lt;span class="s2">: &lt;/span>&lt;span class="si">{1}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">.&lt;/span>&lt;span class="n">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">value&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">err&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">str&lt;/span>&lt;span class="p">()))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Message produced: &lt;/span>&lt;span class="si">{0}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">value&lt;/span>&lt;span class="p">()))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">topic_name&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">topics&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="s2">&amp;#34; exist&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ensure_topic_exists&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">longitude&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="err">????&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">latitude&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="err">????&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;longitude: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">longitude&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> latitude: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">latitude&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sensor_data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;longitude&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="err">????&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sensor_data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;latitude&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="err">????&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="err">????&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">except&lt;/span> &lt;span class="ne">KeyboardInterrupt&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="9">
+&lt;li>Modify the code in the &lt;code>PublishVehicleCoordinates.py&lt;/code> file as instructed below:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>
+&lt;p>Set the &lt;code>topic_name&lt;/code> variable equal to a string with the &lt;code>vehicle-coordinates&lt;/code> value.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the while loop, use the correct NumPy function to simulate random integer values for the &lt;code>longitude&lt;/code> and the &lt;code>latitude&lt;/code>. The values for longitude should be random integers between −180 and 180. The values for &lt;code>latitude&lt;/code> should be random integers between −90 and 90.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">kafka&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">time&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">random&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">json&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">time&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">sleep&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#define producer and consumer variable&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sensor_data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>&lt;span class="s1">&amp;#39;longitude&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;latitude&amp;#39;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">topic_name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;vehicle-coordinates&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">client&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaClient&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">producer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaProducer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">value_serializer&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="k">lambda&lt;/span> &lt;span class="n">x&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">json&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">dumps&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">x&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">encode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;utf-8&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">consumer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">kafka&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">KafkaConsumer&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">bootstrap_servers&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;localhost:9092&amp;#39;&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">def&lt;/span> &lt;span class="nf">acked&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">err&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">msg&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">err&lt;/span> &lt;span class="ow">is&lt;/span> &lt;span class="ow">not&lt;/span> &lt;span class="kc">None&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Failed to deliver message: &lt;/span>&lt;span class="si">{0}&lt;/span>&lt;span class="s2">: &lt;/span>&lt;span class="si">{1}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">.&lt;/span>&lt;span class="n">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">value&lt;/span>&lt;span class="p">(),&lt;/span> &lt;span class="n">err&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">str&lt;/span>&lt;span class="p">()))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Message produced: &lt;/span>&lt;span class="si">{0}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">format&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">msg&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">value&lt;/span>&lt;span class="p">()))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">try&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="n">topic_name&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">topics&lt;/span>&lt;span class="p">():&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="s2">&amp;#34; exist&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ensure_topic_exists&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">consumer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">client&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">close&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="kc">True&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">longitude&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">randint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">180&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">180&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">latitude&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">random&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">randint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">90&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">90&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;longitude: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">longitude&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2"> latitude: &lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="n">latitude&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sensor_data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;longitude&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">longitude&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sensor_data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;latitude&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">latitude&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">producer&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">topic_name&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">value&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">sensor_data&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sleep&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">except&lt;/span> &lt;span class="ne">KeyboardInterrupt&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="10">
+&lt;li>From the Terminal window, run the code in the &lt;code>PublishVehicleCoordinates.py&lt;/code> file to produce the longitude and latitude data.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot10_huca7517005d77b7b502dfeb076a0fbddf_217276_383c1da85005da0e9101aa2759457ad7.webp 400w,
+/project/example/screenshot10_huca7517005d77b7b502dfeb076a0fbddf_217276_1b307827708a5be753265635079ef688.webp 760w,
+/project/example/screenshot10_huca7517005d77b7b502dfeb076a0fbddf_217276_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot10_huca7517005d77b7b502dfeb076a0fbddf_217276_383c1da85005da0e9101aa2759457ad7.webp"
+width="760"
+height="398"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="11">
+&lt;li>Install Node.js
+From the command prompt, run the command below to verify that Node.js is installed:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">node --version
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot11_huca7517005d77b7b502dfeb076a0fbddf_43265_c6ab0c0d0b526055893bf8c1dc730303.webp 400w,
+/project/example/screenshot11_huca7517005d77b7b502dfeb076a0fbddf_43265_e68e35f9c1ac6a34253b4cac03aaa695.webp 760w,
+/project/example/screenshot11_huca7517005d77b7b502dfeb076a0fbddf_43265_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot11_huca7517005d77b7b502dfeb076a0fbddf_43265_c6ab0c0d0b526055893bf8c1dc730303.webp"
+width="760"
+height="90"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="12">
+&lt;li>Now you will write a Node.js web page to consume the location data produced by the PublishVehicleCoordinates.py code. Move the PublishVehicleCoordinates.py file inside the NodeJSConsumer folder. Modify the server.js file inside the NodeJSConsumer folder as follows:&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>Change the topic to &lt;code>vehicle-coordinates&lt;/code>.&lt;/li>
+&lt;li>Change the HTML code on line 19 to display the &lt;code>Consume Vehicle Coordinates&lt;/code> value.&lt;/li>
+&lt;li>Save the file.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">express&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;express&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">consumer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;./myconsumer&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">app&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">express&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">use&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">express&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">let&lt;/span> &lt;span class="nx">options&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">dotfiles&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;ignore&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">redirect&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">use&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">express&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="kr">static&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;public&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nx">options&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>&lt;span class="p">,(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="p">)=&amp;gt;{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="sb">`
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;html&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;h1&amp;gt;Confluence Kafka REST&amp;lt;/h1&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;div&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;form action=&amp;#34;/consumer&amp;#34; method=&amp;#34;get&amp;#34; &amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;Consume Vehicle Coordinates&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;/form&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;/div&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb"> &amp;lt;/html&amp;gt;`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;/consumer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="p">)=&amp;gt;{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">topic&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;vehicle-coordinates&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">response&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">consumer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">myconsumer&lt;/span>&lt;span class="p">({&lt;/span>&lt;span class="nx">topic&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">topic&lt;/span>&lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Success- Consumed: &amp;#34;&lt;/span> &lt;span class="o">+&lt;/span>&lt;span class="nx">topic&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">listen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">5000&lt;/span>&lt;span class="p">,()=&amp;gt;&lt;/span>&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Listening on 5000&amp;#39;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="13">
+&lt;li>In a Terminal window, run the following command to install the Kafka JavaScript library. This will be used to consume Kafka messages in your Node.js web application.&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm install node-rdkafka
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot13_huca7517005d77b7b502dfeb076a0fbddf_86529_0036cdc9d3b349c5e7b5482e9bc88055.webp 400w,
+/project/example/screenshot13_huca7517005d77b7b502dfeb076a0fbddf_86529_854b93959600d0204359cc3b01d505e7.webp 760w,
+/project/example/screenshot13_huca7517005d77b7b502dfeb076a0fbddf_86529_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot13_huca7517005d77b7b502dfeb076a0fbddf_86529_0036cdc9d3b349c5e7b5482e9bc88055.webp"
+width="760"
+height="238"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="14">
+&lt;li>In a Terminal window, navigate to the &lt;code>Project24_3&lt;/code> folder. Start the web page by running the following command:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">node server.js
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot14_huca7517005d77b7b502dfeb076a0fbddf_42978_fb480db32003d24551cccdff718852cb.webp 400w,
+/project/example/screenshot14_huca7517005d77b7b502dfeb076a0fbddf_42978_0e4db4b18a56d73c4ca6faaa41ee9227.webp 760w,
+/project/example/screenshot14_huca7517005d77b7b502dfeb076a0fbddf_42978_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot14_huca7517005d77b7b502dfeb076a0fbddf_42978_fb480db32003d24551cccdff718852cb.webp"
+width="760"
+height="116"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="15">
+&lt;li>Navigate to http://localhost:5000. Your web page should be titled “Confluence Kafka REST” and have a button labeled “Consume Vehicle Coordinates”.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot15_huca7517005d77b7b502dfeb076a0fbddf_33125_f6cd5838f439895206a64493c4f90e76.webp 400w,
+/project/example/screenshot15_huca7517005d77b7b502dfeb076a0fbddf_33125_418cfc4e2690da6f6185b3dbba7efc66.webp 760w,
+/project/example/screenshot15_huca7517005d77b7b502dfeb076a0fbddf_33125_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot15_huca7517005d77b7b502dfeb076a0fbddf_33125_f6cd5838f439895206a64493c4f90e76.webp"
+width="760"
+height="146"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;ol start="16">
+&lt;li>Select the “Consume Vehicle Coordinates” button to verify that your data is being consumed and that there are no errors.&lt;/li>
+&lt;/ol>
+&lt;p>
+&lt;figure id="figure-text-to-show-on-mouseover">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="alt text for screen readers" srcset="
+/project/example/screenshot16_huca7517005d77b7b502dfeb076a0fbddf_24705_6b660425d8844296d4450be6ca14d479.webp 400w,
+/project/example/screenshot16_huca7517005d77b7b502dfeb076a0fbddf_24705_99ce8788818171f72b8e24f1f12b2359.webp 760w,
+/project/example/screenshot16_huca7517005d77b7b502dfeb076a0fbddf_24705_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+src="https://bailocisse.github.io/project/example/screenshot16_huca7517005d77b7b502dfeb076a0fbddf_24705_6b660425d8844296d4450be6ca14d479.webp"
+width="760"
+height="86"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Text to show on mouseover
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;p>Congratulations 👏
+You have created a producer/consumer pair for handling IoT data. Kafka can handle large volumes of data that could potentially be generated in an environment like this. It is also fault tolerant. That is, it would continue to operate properly in the event of the failure of one or more of its components.&lt;/p></description></item><item><title>Data Science</title><link>https://bailocisse.github.io/project/external-project/</link><pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/project/external-project/</guid><description/></item><item><title>Welcome to Wowchemy, the website builder for Hugo</title><link>https://bailocisse.github.io/post/getting-started/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/post/getting-started/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">libr&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;hello&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="overview">Overview&lt;/h2>
 &lt;ol>
@@ -156,7 +547,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-516784329" class="chart">&lt;/div>
+&lt;div id="chart-164758932" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -165,7 +556,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-516784329', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-164758932', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
@@ -529,11 +920,7 @@ data-background-image="/media/boards.jpg"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
 &lt;h1 id="questions">Questions?&lt;/h1>
 &lt;p>&lt;a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Ask&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title>Example Project</title><link>https://bailocisse.github.io/project/example/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/project/example/</guid><description>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p>
-&lt;p>Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p>
-&lt;p>Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p>
-&lt;p>Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p>
-&lt;p>Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p></description></item><item><title>External Project</title><link>https://bailocisse.github.io/project/external-project/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/project/external-project/</guid><description/></item><item><title>An example journal article</title><link>https://bailocisse.github.io/publication/journal-article/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/publication/journal-article/</guid><description>&lt;div class="alert alert-note">
+&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title>An example journal article</title><link>https://bailocisse.github.io/publication/journal-article/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><guid>https://bailocisse.github.io/publication/journal-article/</guid><description>&lt;div class="alert alert-note">
 &lt;div>
 Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 &lt;/div>
