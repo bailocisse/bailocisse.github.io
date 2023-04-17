@@ -28,6 +28,7 @@ bio: Certified Data engineer from Massachussets Institute of Technology xPRO
 interests:
   - Data engineering
   - Data analysis
+  - Databases
 
 # Education to show in About widget
 education:

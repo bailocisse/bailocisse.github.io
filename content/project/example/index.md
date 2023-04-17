@@ -8,15 +8,15 @@ date: '2023-01-01T00:00:00Z'
 # Optional external URL for project (replaces project detail page).
 external_link: ''
 
-image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
+#image:
+#  caption: Photo by rawpixel on Unsplash
+#  focal_point: Smart
 
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
+#links:
+#  - icon: twitter
+#    icon_pack: fab
+#    name: Follow
+#    url: https://twitter.com/georgecushen
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -27,7 +27,8 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+
+# slides: example
 ---
 
 In this project, we will be working with `Kafka`, one of the most successful applications for handling streaming data at scale. We will use a Docker image created by Confluent that installs all of the necessary Kafka components including, among others, the `broker` and `ZooKeeper`. Kafka allows us to store messages in `topics`, which are distributed across multiple brokers by splitting topics into data partitions that save us from unfortunate broker failures.

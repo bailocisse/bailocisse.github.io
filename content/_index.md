@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: My personal page
-date: 2022-10-24
+date: 2023-01-01
 type: landing
 
 sections:
@@ -72,12 +72,12 @@ sections:
           tag: Data engineering
         - name: Data Science
           tag: Data science
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      view: showcase
+    #design:
+      # Choose how many columns the section has. #Valid values: '1' or '2'.
+      #columns: '1'
+      #view: showcase
       # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
+      #flip_alt_rows: false
   - block: contact
     id: contact
     content:
